@@ -1,0 +1,208 @@
+.body, .collection1, .collection2, .collection3, .form{
+    background-image: url("./images/bugatti4.jpg");
+     background-size: cover;
+     height: 100vh;
+}
+
+
+@font-face {
+    font-family: neon;
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf");
+}
+
+/* This is for links at the top of the page of index.html, collections 1-3, and forms.html*/
+.neonLink, .neonLink1, .neonLink2, .neonLink3, .neonForm {
+    font-family: neon;
+    color: #e40c0c;
+    font-size: 2vw;
+    line-height: 2vw;
+    text-shadow: 0 0 3vw #070508;
+}
+
+
+.neon{
+    font-family: neon;
+    color: #f73155;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35 ;
+
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker{
+    0%, 18%, 22%, 25%, 53%, 57%, 100%{
+        text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px red,
+          0 0 80px red,
+          0 0 90px rgb(225, 0, 0),
+          0 0 100px #0fa,
+          0 0 150px lightcoral;
+
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+    
+}
+
+a:hover{
+    color: pink;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+.neonLink, .neonLink1, .neonLink2, .neonLink3, .neonForm {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+
+/*H1 neon text for index.html Collections 1 - 3, form.html*/
+.neon {
+    font-family: neon;
+    color: #f73155;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35;
+}
+
+.neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+/*Footer section neon for index & form.html*/
+.footerIndex, .footerForm {
+    font-family: neon;
+    color: #b80e0e;
+    font-size: 2vw;
+    line-height: 2vw;
+    text-shadow: 0 0 3vw #030305;
+
+}
+
+
+.footerIndex, .footerForm {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+/*Background-image for 1-18 individual video pages */
+.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9, .video10, .video11, .video12, .video13, .video14, .video15, .video16, .video17, .video18{
+     background-image: url("./images/bugatti1.jpg");
+     background-size: cover;
+     height: 100vh;
+}
+
+/* Neon  text links for the first three video pages*/
+.videoLink1, .videoLink2, .videoLink3 {
+    font-family: neon;
+    color: #e40c0c;
+    font-size: 2vw;
+    line-height: 2vw;
+    text-shadow: 0 0 3vw #070508;
+}
+
+
+.videoLink1, .videoLink2, .videoLink3 {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+/* H1 Neon for 1-18 video pages*/
+.neon2 {
+    font-family: neon;
+    color: #141516;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #606de7d2;
+}
+
+.neon2 {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+/*footer for video pager 1-3*/
+.footer1, .footer2, .footer3 {
+    font-family: neon;
+    color: #b80e0e;
+    font-size: 2vw;
+    line-height: 2vw;
+    text-shadow: 0 0 3vw #030305;
+
+}
+
+
+.footer1, .footer2, .footer3 {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+/* styling for videos page 1-3*/
+.vid-border1, .vid-border2, .vid-border3 {
+    position: absolute;
+    height: 225px;
+    width: 400px;
+    border: 10px solid black;
+    overflow: hidden;
+    
+}
+
+#vid1 #vid2 #vid3{
+    position: relative;
+    top: -5px;
+    left: -5px;
+    height: 225px;
+    width: 400px;
+}
+
+.box {
+    position: relative;
+    height: 225px;
+    width: 400px;
+    display: block;
+    background: linear-gradient(0deg, black, #444444);
+}
+
+.glowing::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: glower 20s linear infinite;
+}
+
+@keyframes glower {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+

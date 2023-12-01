@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/styles.css">
+    <title>New Video</title>
+</head>
+
+<body class="form">
+    <nav>
+        <a href="/" class="neonForm">Home</a>
+        <a href="/pages/collectionOne.html" class="neonForm">Collection One</a>
+        <a href="/pages/collectionTwo.html" class="neonForm">Collection Two</a>
+        <a href="/pages/collectionThree.html" class="neonForm">Collection Three</a>
+        <a href="/form.html" class="neonForm">New Video</a>
+    </nav>
+
+    <h1 class="neon">Add New Video</h1>
+
+    <form action="/action_page.php" target="_target" method="post">
+        <label for="name"><b>Video Title</b></label><br>
+        <input id="Video name" name="Video name" placeholder="Video Name"><br><br>
+        <label for="message"><b>Description</b></label><br>
+        <textarea type="text area" rows="10" col="30" placeholder="Description"></textarea><br><br>
+
+        <h3>Video</h3>
+        <button><em>Choose File</em></button><br><br>
+
+        <select id="video file" name="video file">
+            <option value="video file">Choose Collection</option>
+            <option value="video file">Collection 1</option>
+            <option value="video file">Collection 2</option>
+            <option value="video file">Collection 3</option>
+        </select>
+
+
+        <div>
+
+            <input name="radio" id="yes" type="radio" value="yes">
+            <label for="yes">Public</label>
+            <input name="radio" id="no" type="radio" value="no">
+            <label for="no">Private</label>
+            <br>
+            <br>
+
+        </div>
+
+        <br>
+        <br>
+
+        <button><b>Upload Video</b></button>
+
+        <hr>
+
+    </form>
+    <footer class="footerForm"> Links and More</footer>
+
+
+
+
+
+</body>
+
+</html>
